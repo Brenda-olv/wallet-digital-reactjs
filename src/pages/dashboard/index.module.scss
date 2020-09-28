@@ -1,0 +1,143 @@
+.section-dashboard {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    color: #4e4e4e;
+    flex-wrap: wrap;
+    .row {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 15px;
+        h1 {
+            margin: 0;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 15px;
+            flex-wrap: wrap;
+            span {
+                &.user_name {
+                    font-size: 18px;
+                    font-weight: bold;
+                    flex-wrap: wrap;
+                }
+                &.user_email {
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #1b4fc1;
+                    flex-wrap: wrap;
+                }
+            }
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #a9a9a9;
+            border-radius: 6px;
+            flex-wrap: wrap;
+            .card-title {
+                font-size: 18px;
+                font-weight: bold;
+                margin-bottom: 10px;
+                flex-wrap: wrap;
+            }
+            .money-value {
+                font-size: 40px;
+                font-weight: bold;
+                margin-top: 15px;
+                flex-wrap: wrap;
+            }
+            .money-type {
+                font-size: 30px;
+                flex-wrap: wrap;
+            }
+        }
+        .recent-transactions {
+            width: 100%;
+            border-collapse: collapse;
+            flex-wrap: wrap;
+            thead {
+                background: #000;
+                color: #fff;
+                tr {
+                    th {
+                        padding: 5px 0px;
+                        text-align: start;
+                        margin-bottom: 3px;
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    background: #efefef;
+                    margin-bottom: 3px;
+                    font-weight: bold;
+                    border-bottom: 5px solid #fff;
+                    &.tr-mb {
+                        margin-bottom: 5px;
+                    }
+                    td {
+                        padding: 10px 0px;
+                    }
+                    .option {
+                        border: none;
+                        outline: none;
+                        font-size: 30px;
+                        font-weight: bold;
+                    }
+                    .amount {
+                        font-size: 20px;
+                        color: #19b74a;
+                    }
+                    .date-row {
+                        display: inline-flex;
+                        flex-direction: column;
+                        align-items: center;
+                        font-weight: bold;
+                        text-transform: uppercase;
+                        flex-wrap: wrap;
+                    }
+                }
+            }
+        }
+        .btn-action {
+            flex-wrap: wrap;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            padding: 15px;
+            border: none;
+            outline: none;
+            font-size: 20px;
+            background: #1daf57;
+            color: white;
+            cursor: pointer;
+            flex-wrap: wrap;
+            &:hover {
+                filter: contrast(1.5) saturate(0.5);
+            }
+        }
+        .p-0 {
+            padding: 0;
+        }
+        .pr {
+            padding-right: 15px;
+        }
+        .pl {
+            padding-left: 15px;
+        }
+        .mt {
+            margin-top: 15px;
+        }
+    }
+    .bottom-divider {
+        flex-wrap: wrap;
+        border-bottom: 1px solid #dadada;
+    }
+}
